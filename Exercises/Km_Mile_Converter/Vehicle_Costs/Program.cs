@@ -9,13 +9,13 @@ namespace VehicleCosts
             double input = 0;
             bool isNotCorrect = false;
             do {
-            isNotCorrect = false;
-            try {
-                input = Convert.ToDouble(Console.ReadLine());
-            }
-            catch(Exception error) {
-                Console.Write("Only numbers allowed, please try again: ");
-                isNotCorrect = true;
+                isNotCorrect = false;
+                try {
+                    input = Convert.ToDouble(Console.ReadLine());
+                }
+                catch(Exception error) {
+                    Console.Write("Only numbers allowed, please try again: ");
+                    isNotCorrect = true;
                 }
             } while (isNotCorrect);
             return input;
@@ -36,7 +36,7 @@ namespace VehicleCosts
 
             double total = 0;
             for (int i = 0; i < expenses.Length; i ++) {
-            total += user_input(expenses[i]);
+                total += user_input(expenses[i]);
             }
 
             Console.WriteLine("The total yearly cost of your car is £{0:0.00}", total);
