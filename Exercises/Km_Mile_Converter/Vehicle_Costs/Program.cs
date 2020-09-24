@@ -26,12 +26,12 @@ namespace VehicleCosts
             Console.WriteLine ("Pleaseenter the yearly costs for for the following expenses incurred from operating your vehicle:");
         
             string[] expenses = {
-            "fuel",
-            "insurance",
-            "loan payment",
-            "maintenance",
-            "oil",
-            "tyres"
+                "fuel",
+                "insurance",
+                "loan payment",
+                "maintenance",
+                "oil",
+                "tyres"
             };
 
             double total = 0;
